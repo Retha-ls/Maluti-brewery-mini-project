@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCMS - Supply Chain Management | Maluti Brewery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo2.png" alt="Maluti Brewery Logo">
+            </div>
+            <div class="logo-text">Maluti <span>Brewery</span></div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Management Systems <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="scms.html">SCMS - Supply Chain</a></li>
+                    <li><a href="crms.html">CRMS - Customer Relationship</a></li>
+                    <li><a href="kms.html">KMS - Knowledge Management</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SCMS Hero -->
+    <section class="system-hero" style="background: linear-gradient(135deg, var(--primary-green), #0a2f0a);">
+        <div class="container">
+            <h1><i class="fas fa-truck"></i> Supply Chain Management System</h1>
+            <p>Real-time tracking from barley to bottle</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="system-container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        
+        <h2>Current Inventory Status</h2>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Raw Material</th>
+                    <th>Stock Level</th>
+                    <th>Supplier</th>
+                    <th>Next Delivery</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Barley Malt</td>
+                    <td>12,500 kg</td>
+                    <td>Lesotho Grains Co.</td>
+                    <td>2026-02-20</td>
+                    <td><span class="status-badge status-success">● In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>Hops (Saaz)</td>
+                    <td>850 kg</td>
+                    <td>Highland Hops</td>
+                    <td>2026-02-18</td>
+                    <td><span class="status-badge status-warning">● Reorder Soon</span></td>
+                </tr>
+                <tr>
+                    <td>Yeast Culture</td>
+                    <td>230 units</td>
+                    <td>BioTech SA</td>
+                    <td>2026-02-15</td>
+                    <td><span class="status-badge status-success">● In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>Glass Bottles</td>
+                    <td>45,000 units</td>
+                    <td>GlassCo Lesotho</td>
+                    <td>2026-02-25</td>
+                    <td><span class="status-badge status-success">● In Stock</span></td>
+                </tr>
+                <tr>
+                    <td>Labels</td>
+                    <td>12,000 sheets</td>
+                    <td>PrintMaster</td>
+                    <td>2026-02-19</td>
+                    <td><span class="status-badge status-danger">● Critical Low</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="system-grid">
+            <div class="system-card">
+                <i class="fas fa-chart-line card-icon"></i>
+                <h3>Procurement Analytics</h3>
+                <p>Monthly spend: M 245,000</p>
+                <p>Top supplier: Lesotho Grains Co. (42%)</p>
+                <p>Lead time avg: 5.3 days</p>
+            </div>
+            <div class="system-card">
+                <i class="fas fa-warehouse card-icon"></i>
+                <h3>Warehouse Status</h3>
+                <p>Main warehouse: 68% capacity</p>
+                <p>Cold storage: 42% capacity</p>
+                <p>Aging inventory: 3.2%</p>
+            </div>
+            <div class="system-card">
+                <i class="fas fa-truck-loading card-icon"></i>
+                <h3>Active Shipments</h3>
+                <p>In transit: 4 trucks</p>
+                <p>Expected today: 2 deliveries</p>
+                <p>Delayed: 0</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 1997 Maluti Lesotho Brewery. | SCMS v2.4.1 | <a href="index.html">Return to Main Site</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

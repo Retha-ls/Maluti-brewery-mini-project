@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMS - Customer Relationship Management | Maluti Brewery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo2.png" alt="Maluti Brewery Logo">
+            </div>
+            <div class="logo-text">Maluti <span>Brewery</span></div>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Management Systems <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="scms.html">SCMS - Supply Chain</a></li>
+                    <li><a href="crms.html">CRMS - Customer Relationship</a></li>
+                    <li><a href="kms.html">KMS - Knowledge Management</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CRMS Hero -->
+    <section class="system-hero" style="background: linear-gradient(135deg, var(--gold), #b3860d);">
+        <div class="container">
+            <h1><i class="fas fa-heart"></i> Customer Relationship Management</h1>
+            <p>Building lasting connections with every pour</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="system-container">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        
+        <!-- Statistics Dashboard -->
+        <div class="stats-box">
+            <div class="stat-item">
+                <div class="stat-number">5,234</div>
+                <div>Active Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1,847</div>
+                <div>Loyalty Members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3.2k</div>
+                <div>Monthly Orders</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">94%</div>
+                <div>Satisfaction Rate</div>
+            </div>
+        </div>
+
+        <!-- Customer Message/Chat Section -->
+        <div class="message-section">
+            <h2><i class="fas fa-comments"></i> Customer Communication Hub</h2>
+            <div class="message-container">
+                <!-- Chat Window -->
+                <div class="chat-window">
+                    <div class="chat-header">
+                        <img src="logo2.png" alt="Support" class="chat-avatar">
+                        <div>
+                            <h4>Maluti Brewery Support</h4>
+                            <p>Online <span class="online-dot"></span></p>
+                        </div>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message received">
+                            <p>Welcome to Maluti Brewery! How can we help you today?</p>
+                            <span class="message-time">10:00 AM</span>
+                        </div>
+                        <div class="message sent">
+                            <p>I'd like to know more about your loyalty program</p>
+                            <span class="message-time">10:05 AM</span>
+                        </div>
+                        <div class="message received">
+                            <p>Of course! Our loyalty members earn points with every purchase. 100 points = M50 discount!</p>
+                            <span class="message-time">10:06 AM</span>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="messageInput" placeholder="Type your message...">
+                        <button id="sendMessageBtn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Subject</option>
+                                <option>Product Inquiry</option>
+                                <option>Order Status</option>
+                                <option>Loyalty Program</option>
+                                <option>Feedback</option>
+                                <option>Complaint</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <!-- Blog Comments Section -->
+            <div class="blog-comments-section">
+                <h3>Latest Comments</h3>
+                <div class="comments-list">
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User" class="comment-avatar">
+                        <div class="comment-content">
+                            <strong>Thabo M.</strong> <span class="comment-time">2 hours ago</span>
+                            <p>Can't wait to try the Maluti Gold! When will it be available in Maputsoe?</p>
+                            <button class="reply-btn">Reply</button>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User" class="comment-avatar">
+                        <div class="comment-content">
+                            <strong>'M'e Lineo</strong> <span class="comment-time">5 hours ago</span>
+                            <p>Congratulations on the award! Mountain Stout is my absolute favorite.</p>
+                            <button class="reply-btn">Reply</button>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User" class="comment-avatar">
+                        <div class="comment-content">
+                            <strong>Brewmaster John</strong> <span class="comment-time">1 day ago</span>
+                            <p>Thanks everyone for the support! We're working on something special for the holiday season.</p>
+                            <button class="reply-btn">Reply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Comment Form -->
+                <div class="add-comment">
+                    <h4>Leave a Comment</h4>
+                    <textarea placeholder="Share your thoughts..." rows="3"></textarea>
+                    <button class="post-comment-btn">Post Comment</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="testimonials-section">
+            <h2><i class="fas fa-quote-right"></i> Customer Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-user-circle testimonial-avatar"></i>
+                        <div>
+                            <h4>Lerato N.</h4>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"I've been drinking Maluti Lager for 10 years. The quality never changes - always perfect!"</p>
+                    <span class="testimonial-date">Loyalty Member since 2018</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-user-circle testimonial-avatar"></i>
+                        <div>
+                            <h4>Palesa T.</h4>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"The brewery tour was amazing! Learned so much about the brewing process. Highly recommend!"</p>
+                    <span class="testimonial-date">Visited Feb 2026</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <i class="fas fa-user-circle testimonial-avatar"></i>
+                        <div>
+                            <h4>Mpho S.</h4>
+                            <div class="testimonial-rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p>"Great beer and even better customer service. Keep up the good work!"</p>
+                    <span class="testimonial-date">Customer since 2020</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 1997 Maluti Lesotho Brewery. | CRMS v3.1.2 | <a href="index.html">Return to Main Site</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Simple chat functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.getElementById('sendMessageBtn');
+            const messageInput = document.getElementById('messageInput');
+            const chatMessages = document.getElementById('chatMessages');
+            
+            if (sendBtn && messageInput && chatMessages) {
+                sendBtn.addEventListener('click', function() {
+                    const message = messageInput.value.trim();
+                    if (message) {
+                        // Add user message
+                        const userMessage = document.createElement('div');
+                        userMessage.className = 'message sent';
+                        userMessage.innerHTML = `<p>${message}</p><span class="message-time">Just now</span>`;
+                        chatMessages.appendChild(userMessage);
+                        
+                        // Simulate auto-reply after 1 second
+                        setTimeout(function() {
+                            const reply = document.createElement('div');
+                            reply.className = 'message received';
+                            reply.innerHTML = `<p>Thank you for your message. Our team will respond shortly.</p><span class="message-time">Just now</span>`;
+                            chatMessages.appendChild(reply);
+                            chatMessages.scrollTop = chatMessages.scrollHeight;
+                        }, 1000);
+                        
+                        messageInput.value = '';
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }
+                });
+                
+                // Allow Enter key to send
+                messageInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        sendBtn.click();
+                    }
+                });
+            }
+            
+            // Like button functionality
+            document.querySelectorAll('.like-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        icon.style.color = 'var(--gold)';
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        icon.style.color = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
