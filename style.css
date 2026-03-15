@@ -883,6 +883,12 @@ footer {
             rgba(0, 0, 0, 0.6) 50%,
             rgba(0, 0, 0, 0.2) 100%);
     }
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right center;
+    }
     
     .hero-content {
         max-width: 100%;
